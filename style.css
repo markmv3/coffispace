@@ -330,13 +330,13 @@ ol li p:nth-child(2) {
  background-size: 2.6rem 2.6rem;
 }
 ol li p:nth-child(3) {
- background-image: url("https://localespace.s3-ap-southeast-1.amazonaws.com/images/locationicon.svg");
+ background-image: url("http://d1itrd8c9uxrq5.cloudfront.net/images/locationicon.svg");
  background-repeat: no-repeat;
  background-size: 2.8rem 2.8rem;
 }
 
 label p {
-  background-image: url("d1itrd8c9uxrq5.cloudfront.net");
+  background-image: url("http://d1itrd8c9uxrq5.cloudfront.net/images/locationicon.svg");
  background-repeat: no-repeat;
  background-size: 2.8rem 2.8rem;
 }
