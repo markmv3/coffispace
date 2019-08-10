@@ -325,18 +325,18 @@ li > p:nth-child(3) {   /* only for those with no dropdown locations - check if 
 
 /* add icon */
 ol li p:nth-child(2) {
- background-image: url(https://cdn.glitch.com/7f158fc3-2b8b-4424-8d4a-2d20f7c23b67%2Ficonfinder_tag_3688444.svg?v=1563927366957);
+ background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgaWQ9InRhZyIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHN0eWxlPgogICAgICAudmktcHJpbWFyeSB7CiAgICAgICAgZmlsbDogI0ZGNkU2RTsKICAgICAgfQoKICAgICAgLnZpLXByaW1hcnksIC52aS1hY2NlbnQgewogICAgICAgIHN0cm9rZTogI2ZmZjsKICAgICAgICBzdHJva2UtbGluZWNhcDogcm91bmQ7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAwOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLnZpLWFjY2VudCB7CiAgICAgICAgZmlsbDogIzBDMDA1ODsKICAgICAgfQogICAgPC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9InZpLXByaW1hcnkiIGQ9Ik02LjAwOCwyNy4yMDVMMjUuMjE1LDgsNDEsOFYyM0wyMiw0M1oiLz48cGF0aCBjbGFzcz0idmktYWNjZW50IiBkPSJNOS44LDI3LjIwNWwyLjUyNi0yLjUyNiwxMiwxMkwyMS43OTUsMzkuMlpNMzAuOTUxLDEzLjYyOWEzLjEyNiwzLjEyNiwwLDEsMSwwLDQuNDJBMy4xMjYsMy4xMjYsMCwwLDEsMzAuOTUxLDEzLjYyOVoiLz48L3N2Zz4=");
  background-repeat: no-repeat;
  background-size: 2.6rem 2.6rem;
 }
 ol li p:nth-child(3) {
- background-image: url(https://cdn.glitch.com/7f158fc3-2b8b-4424-8d4a-2d20f7c23b67%2Ficonfinder_17_-_Location_1815566.svg?v=1563926812784);
+ background-image: url("s3://localespace/images/locationicon.svg");
  background-repeat: no-repeat;
  background-size: 2.8rem 2.8rem;
 }
 
 label p {
-  background-image: url(https://cdn.glitch.com/7f158fc3-2b8b-4424-8d4a-2d20f7c23b67%2Ficonfinder_17_-_Location_1815566.svg?v=1563926812784);
+  background-image: url("d1itrd8c9uxrq5.cloudfront.net");
  background-repeat: no-repeat;
  background-size: 2.8rem 2.8rem;
 }
