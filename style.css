@@ -427,10 +427,6 @@ ul.submenu {
   overflow: hidden;
   position: absolute;
   background-color: aliceblue;
-  border: 1px solid #97d79a;
-  padding: .6rem;
-  padding-top: .5rem;
-  border-radius: 1rem;
   margin-left: 3rem;
   margin-top: .1rem;
   z-index: 1;
@@ -446,6 +442,11 @@ li label {
 /*show the submenu when checked*/
 input:checked~ul.submenu {
   max-height: 300px;
+  border: 1px solid #97d79a;
+  padding: .6rem;
+  padding-top: .2rem;
+  border-radius: 1rem;
+  margin-top: 4px;
 }
  
 .submenu li {
@@ -456,10 +457,13 @@ input:checked~ul.submenu {
 button {
   border-radius: 3px;
   padding: 3px;
-  background: #a7e4b0;
+  background: #0bf2d8;
   border: solid 1px black;
   cursor: pointer;
   float: right;
   margin-right: 2rem;
-  margin-top: 2px;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
