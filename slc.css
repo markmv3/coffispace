@@ -30,7 +30,7 @@ header {
   color: #002e5b;
   font-weight:500;
   font-family: 'Quicksand', sans-serif;
-  line-height: 4.5rem;
+  line-height: 6rem;
   margin-left: 147px;
 }
 
@@ -47,24 +47,21 @@ section {
 
 #columns img {
   margin-bottom: 4rem;
+    height: 420px;
+    margin-top: 30px;
 }
    
 p, cite {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
    
 /* right-side */
 main {
-  background: #FF886A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45.34deg, #FCF6CF 5.66%, #FF886A 94.35%);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45.34deg, #FCF6CF 5.66%, #FF886A 94.35%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f4f4f4;
   float: right;
   padding: 3%;
   width: 47%;
-  background-color: #eee;
+  background-color: #f4f4f4;;
   padding-top: 1rem;
 }
    
@@ -76,27 +73,28 @@ nav a {
   float:right;
   box-sizing: border-box;
   padding: 1rem;
+  margin-top: 5px;
   position: relative;
   transition-duration: 0.5s;
   width: 13rem;
   text-align: center;
   line-height: 2.3rem;
-  color: #FFF;
+  color: #393939;
   font-size: 2.2rem;
   font-family: 'Roboto', sans-serif;
 }
 
 nav a:hover {
-  background: #6fd54d;
+  background: #1DE9B6;
   cursor: pointer;
 }
 
    /* Sign up */
 h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-family: 'Lato', sans-serif;
   margin-top: 4.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -105,17 +103,25 @@ form {
   width: 500px;
   padding: 1em;
   border-radius: 3rem;
-  background-color: #fff8f8;
+  background-color: #8CEC8B;
   color: #1c1515;
   font-family: 'Work Sans', sans-serif;
   height: 450px;
-  margin-top: 130px;
+  margin-top: 120px;
 }
    
+.login {
+  margin-bottom: 45px;
+  margin-top: 50px;
+}
+
 .name {
   display: inline-block;
   padding-top: 25px;
   padding-left: 30px;
+}
+.name, .email {
+  margin-bottom: 6px;
 }
 
 #firstname {
@@ -169,7 +175,7 @@ button {
 .button {
   text-align: center;
   margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
    
 form p {
@@ -184,33 +190,24 @@ main ol {
 }
    
 .social {
-  margin-left: 230px;
+  display: flex;
+  justify-content: center;
 }
 
 .social li {
   float: left;
   width: 70px;
   height: 70px;
+  text-align: center;
 }
 
 .social li img {
   width: 70px;
 }
 
-.social li:nth-child(3) {
-  margin-top: 13px;
-  margin-left: 7px;
-  width: 62px;
-  height: 65px;
-}
-
-.social li:nth-child(4) {
-  margin-top: 11px;
-  height: 77px;
-}
-
 .social li:nth-child(3) img, .social li:nth-child(4) img {
   width: 43px;
+  padding-top: 12px;
 }
 
 /* responsive image and sign up */
@@ -222,15 +219,12 @@ main ol {
 #columns {
   margin-left: 5rem;
 }
-
-.social {
-  margin-left: 170px;
-} 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
 #logo {
-  margin-left: 70px;
+  margin-left: 40px;
+  line-height: 70px;
 }
 
 #columns {
@@ -238,11 +232,23 @@ main ol {
 }
 
 #columns img {
-  height: 350px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+p, cite {
+  font-size: 2rem;
 }
 
 form {
   width: 420px;
+  height: 430px;
+}
+
+h1 {
+  margin-top: 4rem;
+  font-size: 5rem;
 }
 
 .name {
@@ -266,8 +272,12 @@ form {
   width: 370px;
 }
 
+main ol {
+  margin-top: 55px;
+}
+
 .social {
-  margin-left: 100px;
+  margin-top: 105px;
 }
 
 .social li img {
@@ -284,7 +294,7 @@ form {
 }
 }
    
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
 header {
   width: 33%;
   padding: 2%;
@@ -295,14 +305,17 @@ header {
   margin-left: 5px;
 }
 
+#columns {
+  margin-left: 1rem;
+}
 #columns img {
-  margin-top: 30rem;
+  margin-top: 24rem;
   height: 200px;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
-p, cite {
-  font-size: 1.6rem;
+blockquote p, cite {
+  font-size: 1.7rem;
 }
 
 main {
@@ -313,24 +326,29 @@ main {
 nav a {
   font-size: 1.8rem;
   padding: 5px;
-  margin-top: 15px;
+  margin-top: 18px;
   width: 90px;
 }
 
 form {
   margin-top: 100px;
-  height: 400px;
-  width: 350px;
+  height: 410px;
+  width: 370px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.4rem;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
 }
 
+.login {
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
 .name {
-  padding-left: 5px;
+  padding-left: 14px;
   padding-top:20px;
 }
 
@@ -345,7 +363,7 @@ h1 {
 }
 
 .email, .password {
-  padding-left: 10px;
+  padding-left: 18px;
 }
 
 #email, #password {
@@ -358,9 +376,7 @@ form p {
 }
 
 .social {
-  position: absolute;
-  top: 880px;
-  right: 100px;
+  margin-top: 340px;
 }
 
 .social li img {
@@ -391,26 +407,37 @@ header {
 
 #logo {
   margin-left: 12px;
-  font-size: 2.6rem;
+  line-height: 4rem;
+  font-size: 2.6rem
+}
+
+#columns {
+  margin-top: 45rem;
+  margin-left: 0px;
+  display: flex;
 }
 
 #columns img {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  margin-left: 10px;
   left: 95px;
   height: 180px;
 }
 
-img {
-  position: absolute;
-  top: 480px;
-  right: 95px;
+section > blockquote {
+  margin-top: 70px;
 }
 
-section > blockquote {
-  position: absolute;
-  top: 685px;
-  left: 48px;
+blockquote p, cite {
+  font-size: 1.7rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+cite {
+    float: right;
+    margin-right: 25px;
 }
 
 main {
@@ -421,26 +448,33 @@ main {
 }
 
 nav {
-  margin-top: 7px;
-  margin-right: 15px;
+  margin-top: 12px;
+  margin-right: 18px;
 }
 
 nav a {
   float: right;
   font-size: 2rem;
-  margin-top: 8px;
+  margin-top: 0px;
+  color: #fff;
+}
+
+nav a:hover {
+  border-radius: 2rem;
 }
 
 form {
   margin-top: 5px;
   margin-bottom: 30px;
   width: 360px;
+  height: 410px;
   background-color: #8CEC8B;
 }
 
 h1 {
   margin-top: 4rem;
   margin-bottom: 1.5rem;
+  font-size: 4rem;
 }
 
 .name {
@@ -465,17 +499,18 @@ h1 {
 }
 
 form p {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .social {
-  position: absolute;
-  top: 250px;
-  right: 85px;
+    margin-top: 240px;
+}
+
+.social li {
+  width: 60px;
 }
 
 .social li:nth-child(1) img, .social li:nth-child(2) img {
-  width: 60px;
   height: 60px;
 }
 
@@ -484,24 +519,131 @@ form p {
 }
 
 .social li:nth-child(2) img {
-  margin-right: 20px;
+  margin-top: 2px;
 }
 
 .social li:nth-child(3) img {
-margin-right: -20px;
-margin-top: 10px;
 width: 38px;
 height: 38px;
 }
 
 .social li:nth-child(4) img {
-margin-right: -67px;
-margin-top: 10px;
 width: 35px;
 height: 35px;
 }
 }
- 
+
+@media only screen and (max-width: 740px) and (max-height: 414px) {
+#logo {
+  font-size: 2.6rem;
+  line-height: 20px;
+}
+
+#columns {
+  margin-top: 3rem;
+}
+
+#columns img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0px;
+  height: 190px;
+}
+
+blockquote p, cite {
+  font-size: 1.6rem;
+}
+
+cite {
+  float:right;
+  margin-right: 30px;
+}
+
+main {
+  height: 440px;
+  background: #f4f4f4;
+}
+
+nav {
+  margin-right: -7px;
+  margin-top: 10px;
+  height: 40px;
+  writing-mode: vertical-rl;
+  width: 40px;
+}
+
+nav a {
+  margin-top: 0px;
+  width: 35px;
+}
+
+form {
+  margin-top: 10px;
+  background-color: #8CEC8B;
+  height: 350px;
+  width: 360px;
+}
+
+h1 {
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  padding-left: 12px;
+}
+
+.email, .password {
+  padding-left: 18px;
+}
+
+.button {
+  margin-bottom: 3rem;
+}
+
+form p {
+  margin-top: 20px;
+}
+
+main ol {
+  margin-top: 20px;
+}
+
+.social {
+  margin-top: 0px;
+}
+
+.social li {
+  width: 60px;
+}
+
+.social li:nth-child(1), .social li:nth-child(2) {
+  height: 55px;
+}
+
+.social li:nth-child(1) img, .social li:nth-child(2) img {
+  width: 60px;
+  height: 60px;
+}
+
+.social li:nth-child(3), .social li:nth-child(4) {
+  height: 55px;
+}
+
+.social li:nth-child(3) img {
+  width: 38px;
+  height: 38px;
+}
+
+.social li:nth-child(4) img {
+  width: 35px;
+  height: 35px;
+}
+
+
+}
+
 @media only screen and (max-width: 375px) {
 header  {
     height: 35px;
@@ -509,8 +651,13 @@ header  {
     width: 368px;
 }
 
+#columns {
+  margin-top: 39rem;
+}
+
 #columns img {
   left: 80px;
+  margin-left: 0px;
 }
 
 img {
@@ -520,17 +667,29 @@ img {
 }
 
 section > blockquote {
-  top: 645px;
+  margin-top: 60px;
+}
+
+blockquote p {
+  margin-bottom: 0px;
+}
+
+cite {
+  margin-right: 20px;
 }
 
 main {
     padding: 1%;
-    width: 330px;
+    width: 98%;
+}
+
+.login {
+  margin-bottom: 35px;
 }
 
 nav {
-  margin-right: -24px;
-  margin-top: 9px;
+  margin-right: 18px;
+  margin-top: 16px;
 }
 
 nav a {
@@ -541,16 +700,21 @@ form {
   height: 365px;
   margin: 10px;
   width: 335px;
+  border-radius: 2.5rem;
 }
 
 h1 {
-  font-size: 3.5rem;
-  margin-top: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.7rem;
+  margin-top: 3.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .name {
   padding-left: 5px;
+}
+
+.name, .email {
+  margin-bottom: 0px;
 }
 
 #firstname, #lastname {
@@ -565,12 +729,91 @@ h1 {
   width: 310px;
 }
 
+.button {
+  margin-top: 1.5rem;
+}
+
+form p {
+  margin-top: 30px;
+}
+
 .social {
-  right: 70px;
-  top: 240px;
+  margin-top: 225px;
 }
 }
 
+@media only screen and (max-width: 667px) and (max-height: 375px) {
+header {
+    width: 28%;
+    padding: 2%;
+}
+
+#logo {
+  font-size: 2.4rem;
+  margin-left: 0px;
+}
+
+#logo sub {
+  float: right;
+}
+
+#columns {
+  margin-left: 0rem;
+  margin-top: 4.5rem;
+}
+
+#columns img {
+  height: 170px;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote p {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+main {
+  height: 425px;
+  width: 68%;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+form {
+  margin-top: 5px;
+  height: 335px;
+  width: 350px;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+.name, .email {
+  margin-bottom: 0px;
+}
+
+#firstname, #lastname {
+  max-width: 155px;
+}
+
+
+.email, .password {
+  padding-left: 16px;
+}
+
+#email, #password {
+  width: 322px;
+}
+
+
+
+
+
+}
 @media only screen and (max-width: 360px) {
 header {
   padding-top: .2rem;
@@ -580,23 +823,34 @@ header {
 #logo {
   font-size: 2.6rem;
   padding-top: .2rem;
+  line-height: 4.5rem;
 }
 
 #columns img {
-  margin-top: .5rem;
+  margin-top: 1rem;
+  height: 175px;
 }
 
 section > blockquote {
-  top: 640px;
-  left: 34px;
+  margin-top: 55px;
+}
+
+cite {
+  margin-left: 0px;
+  float: right;
+  margin-right: 10px;
 }
 
 nav {
-  margin-right: -14px;
+  margin-right: 15px;
 }
 
 form {
   width: 320px;
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 #firstname, #lastname {
@@ -606,5 +860,14 @@ form {
 #email, #password {
   width: 300px;
 }
+
+form p {
+  margin-top: 38px;
+}
+
+.social {
+  margin-top: 235px;
+}
+
 
 }
