@@ -283,6 +283,32 @@ input:checked ~ ul.dropdown {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  nav ul {
+    width: 115px;
+  }
+
+  .nav ul li {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 115px;
+  }
+
+  .nav > ul > li:nth-child(3) {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 115px;
+  }
+
+  .nav ul li label img {
+    height: 2rem;
+  }
+
+  input:checked ~ ul.dropdown {
+    width: 115px;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   nav ul li {
     float: none;
