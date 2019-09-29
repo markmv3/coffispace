@@ -947,7 +947,7 @@ main ol {
 
 @media only screen and (max-width: 360px) and (max-height: 416px) {
   section {
-    margin-top: 39rem;
+    margin-top: 41rem;
   }
 
   section img {
@@ -984,5 +984,17 @@ main ol {
 
   .social {
     margin-top: 235px;
+  }
+}
+
+/* new update */
+@media only screen and (max-width: 360px) and (max-height: 375px) {
+  #logo sub {
+    float: none;
+  }
+
+  main {
+    height: 425px;
+    width: 100%;
   }
 }
